@@ -481,7 +481,7 @@
         {
             e = e || window.event;
 
-            if (self.isVisible()) {
+            if (self.isVisible() && !opts.disableKeyboard) {
 
                 switch(e.keyCode){
                     case 13:
